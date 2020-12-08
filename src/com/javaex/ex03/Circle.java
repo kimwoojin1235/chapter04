@@ -1,4 +1,4 @@
-package com.javaex.ex01;
+package com.javaex.ex03;
 
 public class Circle {
 	public int redisu;

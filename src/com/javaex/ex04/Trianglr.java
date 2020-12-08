@@ -1,4 +1,4 @@
-package com.javaex.ex01;
+package com.javaex.ex04;
 
 public class Trianglr {
 	private int width;
