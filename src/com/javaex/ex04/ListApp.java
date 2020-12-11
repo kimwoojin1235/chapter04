@@ -2,14 +2,17 @@ package com.javaex.ex04;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class ListApp {
 
 	public static void main(String[] args) {
 		//ArrayList사용+Ractaingle
 		//ArrayList<Ractangle> rList=new ArrayList<Ractangle>();
-		
-		LinkedList<Ractangle> rList=new LinkedList<Ractangle>();
+		List<Ractangle> rList=new ArrayList<Ractangle>();
+		//인터페이스가 있다면은 섞어쓰기를 많이한다. 그러면 바꿔치기할떄편함
+		//섞어쓰기를 한다면 인터페이스 안에 있는 것들만 쓰겠다는 의미
+		//LinkedList<Ractangle> rList=new LinkedList<Ractangle>();
 		
 		Ractangle r01 =new Ractangle(3,3);
 		Ractangle r02 =new Ractangle(4,4);
@@ -33,6 +36,9 @@ public class ListApp {
 		for (int i = 0; i < rList.size(); i++) {
 			rList.get(i).draw();
 		}
+		System.out.println("===================================");
+		System.out.println(rList.toString()); 
+		
 		System.out.println("===================================");
 		//삭제remove(); 방의 번호를 넣어도 되고 이름을 넣어도됨
 		rList.remove(0);
